@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .searchResult-container {
+      background-color: white;
+      border-radius: 30px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      margin-top: 10vh;
+    }
+  }
+}
