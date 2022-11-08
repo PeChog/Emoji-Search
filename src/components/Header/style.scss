@@ -1,11 +1,13 @@
-.header-container {
-  margin-top: 2vh;
+.header {
   height: 10vh;
-  background-color: #aeb7b3;
-  width: 90vw;
+  color: white;
+  background-color: #313133;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Wriggle";
+
+  font-size: 1.7vw;
+  letter-spacing: 3px;
 }

@@ -1,11 +1,15 @@
 import emojis from "./data/emoji.json";
 import { useState } from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faMagnifyingGlass, faCopy } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./components/Header/Header";
 import Line from "./components/Line/Line";
 
 import "./App.scss";
 import SearchBar from "./components/SearchBar/SearchBar";
+
+library.add(faMagnifyingGlass, faCopy);
 
 function App() {
   const [input, setInput] = useState("");
@@ -16,12 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-        <div className="content-container">
-          <SearchBar handleChange={handleChange} />
-          {input !== "" ? (
-            <div className="searchResult-container">
+      <Header />
+
+      <div className="content-container">
+        <SearchBar handleChange={handleChange} />
+        {input !== "" ? (
+          <div className="searchResult-container">
+            <div className="content">
               {emojis.map((emoji) => {
                 if (emoji.keywords.includes(input)) {
                   return <Line key={emoji.title} emoji={emoji} />;
@@ -30,9 +35,9 @@ function App() {
                 }
               })}
             </div>
-          ) : null}
-        </div>
-      </header>
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

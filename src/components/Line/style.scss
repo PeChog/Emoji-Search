@@ -1,4 +1,30 @@
 .line {
   align-self: center;
-  color: #e1efe6;
+  color: white;
+  border-bottom: gray solid 1px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+  line-height: 6vh;
+  font-weight: bold;
+
+  margin-bottom: 2vh;
+  cursor: pointer;
+  position: relative;
+  // border: solid red 1px;
+  .emoji-name-plus-icon {
+    display: flex;
+    gap: 1vw;
+  }
+  .icon {
+    position: absolute;
+    margin-left: 24.5vw;
+  }
+  .copied {
+    color: #818184;
+    position: absolute;
+    margin-left: 20vw;
+  }
 }
