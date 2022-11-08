@@ -37,6 +37,10 @@ function App() {
             </div>
           </div>
         ) : null}
+        <div className="footer">
+          Made with <span className="footer-var">React</span> by{" "}
+          <span className="footer-var">Quasar</span>
+        </div>
       </div>
     </div>
   );

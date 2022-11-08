@@ -33,9 +33,15 @@ body {
         justify-content: center;
         flex-direction: column;
         // gap: 3vh;
-        .null {
-          display: none;
-        }
+      }
+    }
+    .footer {
+      margin-top: 2vh;
+      color: white;
+
+      .footer-var {
+        color: rgb(155, 34, 137);
+        text-decoration: underline;
       }
     }
   }
